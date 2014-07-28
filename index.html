@@ -34,7 +34,7 @@
     </div>
 
     <div class="container content">
-        Animation Type: <select ng-model="animationtype" ng-init="animationtype = 'dropIn'" ng-options="animation for animation in ['dropIn','slideIn','pop']"></select>
+        Animation Type: <select ng-model="animationtype" ng-init="animationtype = 'dropIn'" ng-options="animation for animation in ['dropIn','slideIn','pop', 'slideUp']"></select>
         <div class="content">
             <div ng-view class="animated {{animationtype}}"></div>
         </div>
@@ -46,7 +46,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 footer-text">
-                &copy; 2014 Derek Baumgartner
+                &copy; 2014 <strong>Derek Baumgartner</strong>
             </div>
             <div class="col-md-8 portfolios">
                 <a href="https://play.google.com/store/apps/developer?id=TheDBomb&hl=en"><i class="fa fa-android"></i></a>

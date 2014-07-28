@@ -13,8 +13,8 @@
 @-webkit-keyframes dropInEnter {
     0% {
         opacity: 0;
-        -webkit-transform: scale(1.05);
-        transform: scale(1.05);
+        -webkit-transform: scale(1.03);
+        transform: scale(1.03);
     }
 
     100% {
@@ -47,8 +47,8 @@
 
     100% {
         opacity: 0;
-        -webkit-transform: scale(0.95);
-        transform: scale(0.95);
+        -webkit-transform: scale(0.97);
+        transform: scale(0.97);
     }
 }
 
@@ -67,14 +67,14 @@
 
 .dropIn.ng-enter {
     position: relative;
-    -webkit-animation: dropInEnter 300ms ease-out;
-    animation: dropInEnter 300ms ease-out;
+    -webkit-animation: dropInEnter 500ms ease;
+    animation: dropInEnter 500ms ease;
 }
 
 .dropIn.ng-leave {
     position: absolute;
-    -webkit-animation: dropInExit 300ms ease-out;
-    animation: dropInExit 300ms ease-out;
+    -webkit-animation: dropInExit 500ms ease;
+    animation: dropInExit 500ms ease;
 }
 
 /* =================================== slideIn =================================== */
@@ -149,8 +149,8 @@
 @-webkit-keyframes popIn {
     0% {
         opacity: 0;
-        -webkit-transform: translate3d(0, 10px, 0) scale(0.99);
-        transform: translate3d(0, 10px, 0) scale(0.99);
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
     }
 
     100% {
@@ -183,8 +183,8 @@
 
     100% {
         opacity: 0;
-        -webkit-transform: translate3d(0, 10px, 0) scale(0.99);
-        transform: translate3d(0, 10px, 0) scale(0.99);
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
     }
 }
 
@@ -211,4 +211,72 @@
     position: absolute;
     -webkit-animation: popOut 300ms ease-out;
     animation: popOut 300ms ease;
+}
+
+/* =================================== slideUp =================================== */
+@-webkit-keyframes slideUpEnter {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes slideUpEnter {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-10%, 0, 0);
+        -ms-transform: translate3d(-10%, 0, 0);
+        transform: translate3d(-10%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes slideUpExit {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes slideUpExit {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+.slideUp.ng-enter {
+    position: relative;
+    -webkit-animation: slideUpEnter 500ms ease;
+    animation: slideUpEnter 300ms ease;
+}
+
+.slideUp.ng-leave {
+    position: absolute;
+    -webkit-animation: slideUpExit 500ms ease;
+    animation: slideUpExit 300ms ease;
 }

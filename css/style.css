@@ -40,6 +40,8 @@ footer {
 
 .portfolios > a {
     color: #bac1c8;
+    -webkit-transition: color 400ms ease;
+    transition: color 400ms ease;
 }
 
 .portfolios > a:hover {
@@ -99,8 +101,8 @@ footer {
     padding: 5px 10px;
     text-decoration: none;
 
-    -webkit-transition: color 0.2s ease-in;
-    transition: color 0.2s ease-in;
+    -webkit-transition: color 400ms ease;
+    transition: color 400ms ease;
 }
 
 .navlink > a:hover {
