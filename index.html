@@ -7,29 +7,35 @@
     <meta name="description" content="Derek Baumgartner's Website">
     <meta name="author" content="Derek Baumgartner">
 
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animations.css" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-    <div class="visible-lg-block visible-md-block">
-        <div class="logo"><img src="logo-small.png"></div>
-        <div class="navigation-bar" ng-controller="MyCtrl">
-            <ul>
-                <li class="navlink" ng-class="{active:isActive('/')}"><a href="#/">Home</a></li>
-                <li class="navlink" ng-class="{active:isActive('/design')}"><a href="#/design">Design</a></li>
-                <li class="navlink" ng-class="{active:isActive('/projects')}"><a href="#/projects">Projects</a></li>
-                <li class="navlink" ng-class="{active:isActive('/resume')}"><a href="#/resume">Resume</a></li>
-                <li class="navlink" ng-class="{active:isActive('/school')}"><a href="#/school">School</a></li>
-            </ul>
+<div class="pageheader">
+    <div class="container">
+        <div class="visible-lg-block visible-md-block">
+            <div class="logo"><img src="http://placehold.it/200x60"/></div>
+            <div class="navigation-bar" ng-controller="MyCtrl">
+                <ul>
+                    <li class="navlink" ng-class="{active:isActive('/')}"><a href="#/">Home</a></li>
+                    <li class="navlink" ng-class="{active:isActive('/design')}"><a href="#/design">Design</a></li>
+                    <li class="navlink" ng-class="{active:isActive('/projects')}"><a href="#/projects">Projects</a></li>
+                    <li class="navlink" ng-class="{active:isActive('/resume')}"><a href="#/resume">Resume</a></li>
+                    <li class="navlink" ng-class="{active:isActive('/school')}"><a href="#/school">School</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
         </div>
     </div>
 </div>
 
 <div class="container content">
-    <div class="content"><div ng-view class="fade"></div></div>
-
+    Animation Type: <select ng-model="animationtype" ng-init="animationtype = 'dropIn'" ng-options="animation for animation in ['dropIn','slideIn','pop']"></select>
+    <div class="content">
+        <div ng-view class="animated {{animationtype}}"></div>
+    </div>
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>

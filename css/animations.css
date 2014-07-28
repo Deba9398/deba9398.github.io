@@ -1,0 +1,214 @@
+/* Animate.CSS Cutout - Let's improve performance */
+
+.animated {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+/* =================================== dropIn =================================== */
+@-webkit-keyframes dropInEnter {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes dropInEnter {
+    0% {
+        opacity: 0;
+        -ms-transform: scale(1.03);
+        -webkit-transform: scale(1.03);
+        transform: scale(1.03);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes dropInExit {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+    }
+}
+
+@keyframes dropInExit {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(0.97);
+        -ms-transform: scale(0.97);
+        transform: scale(0.97);
+    }
+}
+
+.dropIn.ng-enter {
+    position: relative;
+    -webkit-animation: dropInEnter 300ms ease-out;
+    animation: dropInEnter 300ms ease-out;
+}
+
+.dropIn.ng-leave {
+    position: absolute;
+    -webkit-animation: dropInExit 300ms ease-out;
+    animation: dropInExit 300ms ease-out;
+}
+
+/* =================================== slideIn =================================== */
+@-webkit-keyframes slideInEnter {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-10%, 0, 0);
+        transform: translate3d(-10%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes slideInEnter {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-10%, 0, 0);
+        -ms-transform: translate3d(-10%, 0, 0);
+        transform: translate3d(-10%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes slideInExit {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+@keyframes slideInExit {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+.slideIn.ng-enter {
+    position: relative;
+    -webkit-animation: slideInEnter 300ms ease-out;
+    animation: slideInEnter 300ms ease-out;
+}
+
+.slideIn.ng-leave {
+    position: absolute;
+    -webkit-animation: slideInExit 300ms ease;
+    animation: slideInExit 300ms ease-out;
+}
+
+/* =================================== pop =================================== */
+@-webkit-keyframes popIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 10px, 0) scale(0.99);
+        transform: translate3d(0, 10px, 0) scale(0.99);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 10px, 0) scale(0.99);
+        -ms-transform: translate3d(0, 10px, 0) scale(0.99);
+        transform: translate3d(0, 10px, 0) scale(0.99);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes popOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 10px, 0) scale(0.99);
+        transform: translate3d(0, 10px, 0) scale(0.99);
+    }
+}
+
+@keyframes popOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate3d(0, 10px, 0) scale(0.99);
+        -webkit-transform: translate3d(0, 10px, 0) scale(0.99);
+        -ms-transform: translate3d(0, 10px, 0) scale(0.99);
+    }
+}
+
+.pop.ng-enter {
+    position: relative;
+    -webkit-animation: popIn 300ms ease-out;
+    animation: popIn 500ms ease;
+}
+
+.pop.ng-leave {
+    position: absolute;
+    -webkit-animation: popOut 300ms ease-out;
+    animation: popOut 300ms ease;
+}
