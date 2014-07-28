@@ -53,5 +53,42 @@ body {
 }
 
 .content {
-    padding-top: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    opacity: 1;
+}
+.fade.ng-enter,
+.fade.ng-leave {
+    -moz-transition: opacity .3s ease, left .5s ease, right .5s ease;
+    -webkit-transition: opacity .3s ease, left .5s ease, right .5s ease;
+    transition: opacity .3s ease, left .5s ease, right .5s ease;
+}
+.fade.ng-enter {
+    opacity: 0;
+    left: -30px;
+    right: 30px;
+}
+.fade.ng-enter-active {
+    opacity: 1;
+    left: 0;
+    right: 0;
+}
+.fade.ng-leave {
+    opacity: 1;
+    left: 0;
+}
+.fade.ng-leave-active {
+    opacity: 0;
+}
+
+.img-padding {
+    padding: 10px;
 }
