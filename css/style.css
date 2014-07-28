@@ -4,8 +4,50 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Sticky Footer Styles */
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -50px;
+}
+footer, .push {
+    height: 50px;
+}
+/* End Sticky Footer Styles */
+
+footer {
+    background-color: #edeff1;
+}
+
+.footer-text {
+    line-height: 50px;
+    color: #bac1c8;
+}
+
+.portfolios {
+    text-align: right;
+    line-height: 50px;
+    font-size: 2em;
+    vertical-align: middle;
+}
+
+.portfolios > a {
+    color: #bac1c8;
+}
+
+.portfolios > a:hover {
+    color: #5f656f;
+}
+
 .pageheader {
-    background-color: #F5F5F5;
+    background-color: #edeff1;
 }
 
 .clear {
@@ -53,7 +95,7 @@ body {
 }
 
 .navlink > a {
-    color: #C0C1C2;
+    color: #bac1c8;
     padding: 5px 10px;
     text-decoration: none;
 
