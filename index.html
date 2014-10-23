@@ -9,7 +9,7 @@
 
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/animations.css" rel="stylesheet">
 </head>
@@ -21,11 +21,11 @@
                 <div class="logo"><img src="http://placehold.it/200x60"/></div>
                 <div class="navigation-bar" ng-controller="MyCtrl">
                     <ul>
-                        <li class="navlink" ng-class="{active:isActive('/')}"><a href="#/">Home</a></li>
-                        <li class="navlink" ng-class="{active:isActive('/design')}"><a href="#/design">Design</a></li>
-                        <li class="navlink" ng-class="{active:isActive('/projects')}"><a href="#/projects">Projects</a></li>
-                        <li class="navlink" ng-class="{active:isActive('/resume')}"><a href="#/resume">Resume</a></li>
-                        <li class="navlink" ng-class="{active:isActive('/school')}"><a href="#/school">School</a></li>
+                        <li class="navlink" ng-class="{active:isActive('/')}"><a href="#/">HOME</a></li>
+                        <li class="navlink" ng-class="{active:isActive('/design')}"><a href="#/design">DESIGN</a></li>
+                        <li class="navlink" ng-class="{active:isActive('/projects')}"><a href="#/projects">PROJECTS</a></li>
+                        <li class="navlink" ng-class="{active:isActive('/resume')}"><a href="#/resume">RESUME</a></li>
+                        <li class="navlink" ng-class="{active:isActive('/school')}"><a href="#/school">SCHOOL</a></li>
                     </ul>
                 </div>
                 <div class="clear"></div>
@@ -34,7 +34,7 @@
     </div>
 
     <div class="container content">
-        Animation Type: <select ng-model="animationtype" ng-init="animationtype = 'dropIn'" ng-options="animation for animation in ['dropIn','slideIn','pop', 'slideUp']"></select>
+        <div style="display:none">Animation Type: <select ng-model="animationtype" ng-init="animationtype = 'slideUp'" ng-options="animation for animation in ['dropIn','slideIn','pop', 'slideUp']" style="display:"></select></div>
         <div class="content">
             <div ng-view class="animated {{animationtype}}"></div>
         </div>
@@ -57,7 +57,7 @@
     </div>
 </footer>
 
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="js/angular-route.min.js"></script>

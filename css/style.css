@@ -1,8 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
-
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
 }
+
 html {
     overflow-y: scroll;
 }
@@ -29,9 +29,14 @@ footer {
     background-color: #edeff1;
 }
 
+.header {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+}
+
 .footer-text {
     line-height: 50px;
-    color: #bac1c8;
+    color: #a4adb7;
 }
 
 .portfolios {
@@ -42,7 +47,7 @@ footer {
 }
 
 .portfolios > a {
-    color: #bac1c8;
+    color: #a4adb7;
     -webkit-transition: color 400ms ease;
     transition: color 400ms ease;
 }
@@ -74,35 +79,37 @@ footer {
 }
 
 .navigation-bar > ul {
-    line-height: 60px;
+    line-height: 65px;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
 .navlink {
-    font-weight: 700;
-    margin: 0 10px;
-    border: 5px solid transparent;
+    font-weight: 400;
+    margin: 0 5px;
+    border: 6px solid transparent;
     display: inline-block;
-    font-size: 1em;
+    font-size: 1.1em;
 
     -webkit-transition: border 0.2s ease-in;
     transition: border 0.2s ease-in;
 }
 
 .active {
-    border-top-color: #5f656f;
+    border-top-color: #3498DB;
 }
 
 .navlink.active > a {
     color: #5f656f;
+    font-weight: 700;
 }
 
 .navlink > a {
     color: #bac1c8;
     padding: 5px 10px;
     text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
 
     -webkit-transition: color 400ms ease;
     transition: color 400ms ease;
@@ -119,4 +126,10 @@ footer {
 
 .img-padding {
     padding: 10px;
+}
+
+p {
+    line-height: 1.5;
+    color: #777;
+    font-size: 1.8rem;
 }

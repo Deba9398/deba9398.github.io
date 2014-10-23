@@ -217,8 +217,8 @@
 @-webkit-keyframes slideUpEnter {
     0% {
         opacity: 0;
-        -webkit-transform: translate3d(0, 100px, 0);
-        transform: translate3d(0, 100px, 0);
+        -webkit-transform: translate3d(0, 50px, 0);
+        transform: translate3d(0, 50px, 0);
     }
 
     100% {
@@ -231,9 +231,9 @@
 @keyframes slideUpEnter {
     0% {
         opacity: 0;
-        -webkit-transform: translate3d(-10%, 0, 0);
-        -ms-transform: translate3d(-10%, 0, 0);
-        transform: translate3d(-10%, 0, 0);
+        -webkit-transform: translate3d(0, 50px, 0);
+        -ms-transform: translate3d(0, 50px, 0);
+        transform: translate3d(0, 50px, 0);
     }
 
     100% {
@@ -251,8 +251,8 @@
 
     100% {
         opacity: 0;
-        -webkit-transform: translate3d(0, 100px, 0);
-        transform: translate3d(0, 100px, 0);
+        -webkit-transform: translate3d(0, 50px, 0);
+        transform: translate3d(0, 50px, 0);
     }
 }
 
@@ -263,20 +263,20 @@
 
     100% {
         opacity: 0;
-        -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        transform: scale(0.9);
+	-webkit-transform: translate3d(0, 50px, 0);
+        -ms-transform: translate3d(0, 50px, 0);
+        transform: translate3d(0, 50px, 0);
     }
 }
 
 .slideUp.ng-enter {
     position: relative;
     -webkit-animation: slideUpEnter 500ms ease;
-    animation: slideUpEnter 300ms ease;
+    animation: slideUpEnter 500ms ease;
 }
 
 .slideUp.ng-leave {
     position: absolute;
     -webkit-animation: slideUpExit 500ms ease;
-    animation: slideUpExit 300ms ease;
+    animation: slideUpExit 500ms ease;
 }
