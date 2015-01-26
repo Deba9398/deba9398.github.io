@@ -1,45 +1,83 @@
 <!DOCTYPE html>
-
-<html lang="en" ng-app="myApp">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Derek Baumgartner</title>
-    <meta name="description" content="Derek Baumgartner's Website">
-    <meta name="author" content="Derek Baumgartner">
-
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8"/>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700|Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/animations.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<div class="wrapper">
-    <div class="pageheader">
-        <div class="container">
-            <div class="visible-lg-block visible-md-block">
-                <div class="logo"><img src="http://placehold.it/200x60"/></div>
-                <div class="navigation-bar" ng-controller="MyCtrl">
-                    <ul>
-                        <li class="navlink" ng-class="{active:isActive('/')}"><a href="#/">HOME</a></li>
-                        <li class="navlink" ng-class="{active:isActive('/design')}"><a href="#/design">DESIGN</a></li>
-                        <li class="navlink" ng-class="{active:isActive('/projects')}"><a href="#/projects">PROJECTS</a></li>
-                        <li class="navlink" ng-class="{active:isActive('/resume')}"><a href="#/resume">RESUME</a></li>
-                        <li class="navlink" ng-class="{active:isActive('/school')}"><a href="#/school">SCHOOL</a></li>
-                    </ul>
+<header>
+    <div id="header-portfolios">
+        <a href="https://play.google.com/store/apps/developer?id=TheDBomb&hl=en"><i class="fa fa-android"></i></a>
+        <a href="https://github.com/Deba9398"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/pub/derek-baumgartner/79/39a/24b"><i class="fa fa-linkedin-square"></i></a>
+    </div>
+    <div id="title">
+        DEREK BAUMGARTNER
+        <div class="subtitle">
+            USER FOCUSED SOFTWARE DEVELOPMENT AND DESIGN
+        </div>
+    </div>
+</header>
+
+
+<div class="section bg-gray">
+    <div class="container">
+        <h1>ABOUT ME</h1>
+        <div class="row">
+            <!-- Introduction -->
+            <div class="col-md-8">
+                <h2>Hi, I'm Derek Baumgartner</h2>
+                <p>I'm a Senior Computer Science major in the Software Engineering track attending the <a href="http://www.colorado.edu/" target="_blank">University of Colorado at Boulder</a>. I plan to graduate with my bachelors degree in May 2015. I have experience designing and developing for desktop, web, and mobile.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="me.jpg" alt="This was my Senior photo." class="img-circle img-padding center">
+            </div>
+            <div class="clear"></div>
+
+            <div class="row pad-top-5">
+                <div class="col-md-4">
+                    <h2 class="center-text">Desktop</h2>
+                    <img src="http://placehold.it/200x200" alt="Placeholder" class="img-padding center">
+                    <p class="p-small pad-top-2">Recently I have been gaining interest in web development due to it's rapidly evolving design and development techniques as seen with frameworks such as <a href="http://getbootstrap.com/" target="_blank">Bootstap</a> and <a href="https://angularjs.org/" target="_blank">AngularJS</a>.</p>
                 </div>
-                <div class="clear"></div>
+                <div class="col-md-4">
+                    <h2 class="center-text">Web</h2>
+                    <img src="http://placehold.it/200x200" alt="Placeholder" class="img-padding center">
+                </div>
+                <div class="col-md-4">
+                    <h2 class="center-text">Mobile</h2>
+                    <img src="http://placehold.it/200x200" alt="Placeholder" class="img-padding center">
+                </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="container content">
-        <div style="display:none">Animation Type: <select ng-model="animationtype" ng-init="animationtype = 'slideUp'" ng-options="animation for animation in ['dropIn','slideIn','pop', 'slideUp']" style="display:"></select></div>
-        <div class="content">
-            <div ng-view class="animated {{animationtype}}"></div>
+<div class="section bg-white">
+    <div class="container">
+        <h1>DESIGN</h1>
+        <div class="row">
         </div>
     </div>
-    <div class="push"></div>
+</div>
+
+<div class="section bg-gray">
+    <div class="container">
+        <h1>PROJECTS</h1>
+        <div class="row">
+        </div>
+    </div>
+</div>
+
+<div class="section bg-white">
+    <div class="container">
+        <h1>RESUME</h1>
+        <div class="row">
+        </div>
+    </div>
 </div>
 
 <footer>
@@ -57,12 +95,8 @@
     </div>
 </footer>
 
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="js/angular-route.min.js"></script>
-<script src="js/angular-animate.min.js"></script>
-<script src="js/app.js"></script>
-<script src="js/controller.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </body>
 </html>
