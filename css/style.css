@@ -23,7 +23,6 @@ header {
 .header-links li > a {
     text-decoration: none;
     font-size: 1.8rem;
-    /*border-bottom: solid #fff 1px;*/
     color: #fff;
     opacity: 0.5;
     margin: 1rem 1rem;
@@ -55,7 +54,7 @@ header {
 }
 
 #title {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     padding: 15rem 2rem 25rem 2rem;
     font-weight: 700;
     text-align: center;
@@ -98,7 +97,7 @@ h1 {
     font-weight: 700;
     text-align: center;
     font-size: 4.5rem;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
 }
 
 h2 {
@@ -108,7 +107,7 @@ h2 {
 }
 
 .section {
-    padding: 4rem;
+    padding: 4rem 0 14rem 0;
     font-size: 2rem;
 }
 
