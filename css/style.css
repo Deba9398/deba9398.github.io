@@ -97,7 +97,7 @@ h1 {
     font-weight: 700;
     text-align: center;
     font-size: 4.5rem;
-    padding-bottom: 6rem;
+    padding-bottom: 8rem;
 }
 
 h2 {
@@ -117,6 +117,10 @@ h2 {
 
 .bg-white {
     background-color: #fff;
+}
+
+.pad-top-10 {
+    padding-top: 10rem;
 }
 
 .pad-top-5 {
