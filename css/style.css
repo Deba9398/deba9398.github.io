@@ -10,9 +10,53 @@ header {
     -o-background-size: cover;
 }
 
+.header-links {
+    margin-top: 2rem;
+    list-style-type: none;
+    text-align: center;
+}
+
+.header-links li {
+    display: inline;
+}
+
+.header-links li > a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    /*border-bottom: solid #fff 1px;*/
+    color: #fff;
+    opacity: 0.5;
+    margin: 1rem 1rem;
+    padding: 0rem 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: opacity 400ms;
+}
+
+.header-links li :hover {
+    opacity: 1;
+}
+
+#header-portfolios {
+    padding: 1rem 2rem;
+    float: right;
+    font-size: 3rem;
+    color: #fff;
+}
+
+#header-portfolios > a {
+    color: #fff;
+    opacity: 0.5;
+    -webkit-transition: opacity 400ms ease;
+    transition: opacity 400ms ease;
+}
+
+#header-portfolios > a:hover {
+    opacity: 1;
+}
+
 #title {
     font-family: 'Open Sans', sans-serif;
-    padding: 25rem 2rem;
+    padding: 15rem 2rem 25rem 2rem;
     font-weight: 700;
     text-align: center;
     font-size: 6rem;
@@ -35,6 +79,18 @@ header {
 
 .center-text {
     text-align: center;
+}
+
+.fa-center {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.fa-experience {
+    font-size: 15rem;
+    line-height: 20rem;
 }
 
 h1 {
@@ -97,41 +153,29 @@ footer {
     line-height: 100px;
 }
 
-.portfolios {
-    text-align: right;
-    line-height: 100px;
+.footer-icon {
     font-size: 4rem;
     vertical-align: middle;
 }
 
-.portfolios > a {
+.footer-icon > a {
     color: #a4adb7;
     -webkit-transition: color 400ms ease;
     transition: color 400ms ease;
 }
 
-.portfolios > a:hover {
+.footer-icon > a:hover {
     color: #5f656f;
 }
 
-#header-portfolios {
-    padding: 1rem 2rem;
-    float: right;
-    font-size: 4rem;
-    color: #fff;
-}
-
-#header-portfolios > a {
-    color: #fff;
-    opacity: 0.5;
-    -webkit-transition: opacity 400ms ease;
-    transition: opacity 400ms ease;
-}
-
-#header-portfolios > a:hover {
-    opacity: 1;
+.right {
+    text-align: right;
 }
 
 #media {
     float: right;
+}
+
+.box-shadow {
+    box-shadow: 0px 0px 30px #000;
 }
