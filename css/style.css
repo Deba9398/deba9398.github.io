@@ -60,15 +60,29 @@ header {
     text-align: center;
     font-size: 6rem;
     color: #fff;
-    /*margin-top: 40vh;*/
     top: 50%;
     text-shadow: 2px 2px 15px #333;
 }
 
 .subtitle {
-    font-size: 2.5rem;
-    font-weight: 300;
-    opacity: 1;
+     font-size: 2.5rem;
+     font-weight: 300;
+}
+
+/* Header and Title media queries */
+@media (max-width: 767px) {
+    #title {
+        font-size: 4rem;
+        padding: 10rem 2rem 15rem 2rem;
+    }
+    .subtitle {
+        font-size: 1.5rem;
+    }
+    .header-links li > a {
+        font-size: 1rem;
+        margin: 1rem 1rem;
+        padding: 0rem 0rem;
+    }
 }
 
 .center {
@@ -106,9 +120,38 @@ h2 {
     text-align: left;
 }
 
+p {
+    line-height: 1.5;
+    color: #555;
+    font-size: 2rem;
+}
+
+.p-small {
+    font-size: 1.5rem;
+}
+
 .section {
     padding: 4rem 0 14rem 0;
     font-size: 2rem;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 3rem;
+        padding-bottom: 4rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .section {
+        padding: 2rem 0 8rem 0;
+    }
 }
 
 .bg-gray {
@@ -136,16 +179,6 @@ h2 {
     line-height:0;
 }
 
-p {
-    line-height: 1.5;
-    color: #555;
-    font-size: 2rem;
-}
-
-.p-small {
-    font-size: 1.5rem;
-}
-
 footer {
     background-color: #3a4142;
     box-shadow: inset 0px 6px 20px -5px #000;
@@ -155,6 +188,24 @@ footer {
     color: #a4adb7;
     font-size: 1.8rem;
     line-height: 100px;
+}
+
+/* Footer Media Queries */
+@media (max-width: 767px) {
+    .footer-text {
+        text-align: center;
+        line-height: 60px;
+    }
+
+    .footer-text .footer-icon {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-icon {
+        text-align: right;
+    }
 }
 
 .footer-icon {
@@ -182,4 +233,8 @@ footer {
 
 .box-shadow {
     box-shadow: 0px 0px 30px #000;
+}
+
+.header-links {
+    padding-left: 0;
 }

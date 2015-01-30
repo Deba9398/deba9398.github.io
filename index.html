@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <meta name=viewport content="width=640, initial-scale=1">
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <title>Derek Baumgartner</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700|Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
@@ -12,7 +12,7 @@
 <body>
 <header id="Top">
     <div class="container">
-    <div class="row">
+    <div class="row hidden-xs">
         <div class="col-md-3"></div>
         <div class="col-md-6">
             <ul class="header-links">
@@ -23,7 +23,7 @@
             </ul>
         </div>
         <div class="col-md-3">
-            <div id="header-portfolios">
+            <div id="header-portfolios" class="hidden-sm">
                 <a href="https://play.google.com/store/apps/developer?id=TheDBomb&hl=en" title="Android"><i class="fa fa-android"></i></a>
                 <a href="https://github.com/Deba9398" title="Github"><i class="fa fa-github"></i></a>
                 <a href="https://www.linkedin.com/pub/derek-baumgartner/79/39a/24b" title="LinkedIn"><i class="fa fa-linkedin-square"></i></a>
@@ -32,7 +32,7 @@
     </div>
     </div>
     <div id="title">
-        DEREK BAUMGARTNER
+        <span id="title-span">DEREK BAUMGARTNER</span>
         <div class="subtitle">
             USER FOCUSED SOFTWARE DEVELOPMENT AND DESIGN
         </div>
@@ -47,24 +47,24 @@
             <div class="col-md-4">
                 <img src="img/me.jpg" alt="This was my Senior photo." class="img-circle img-padding center">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 col-md-offset-0 col-xs-10 col-xs-offset-1">
                 <h2>Hi, I'm Derek Baumgartner</h2>
                 <p>I'm a Senior Computer Science major in the Software Engineering track attending the <a href="http://www.colorado.edu/" target="_blank">University of Colorado at Boulder</a>. I plan to graduate with my bachelors degree in May 2015. I have experience designing and developing for desktop, web, and mobile.</p>
             </div>
 
             <div class="clear"></div>
             <div class="pad-top-10"></div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1">
                     <h2 class="center-text">DESKTOP</h2>
                     <i class="fa fa-globe fa-experience fa-center"></i>
                     <p class="p-small pad-top-2">Recently I have been gaining interest in web development due to it's rapidly evolving design and development techniques as seen with frameworks such as <a href="http://getbootstrap.com/" target="_blank">Bootstap</a> and <a href="https://angularjs.org/" target="_blank">AngularJS</a>.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1">
                     <h2 class="center-text">WEB</h2>
                     <i class="fa fa-desktop fa-experience fa-center"></i>
                     <p class="p-small pad-top-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a pulvinar ligula. In aliquam orci eget diam sagittis hendrerit. Nulla faucibus dapibus dictum. Nullam vitae malesuada ligula.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1">
                     <h2 class="center-text">MOBILE</h2>
                     <i class="fa fa-android fa-experience fa-center"></i>
                     <p class="p-small pad-top-2">Vestibulum imperdiet, nibh eu placerat ultricies, justo ligula pharetra nulla, at aliquet dolor quam sit amet urna. Pellentesque eget sem quam. </p>
@@ -76,41 +76,34 @@
 <div id="Design" class="section bg-white">
     <div class="container">
         <h1>DESIGN</h1>
-        <div class="row">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a pulvinar ligula. In aliquam orci eget diam sagittis hendrerit. Nulla faucibus dapibus dictum. Nullam vitae malesuada ligula. Vestibulum imperdiet, nibh eu placerat ultricies, justo ligula pharetra nulla, at aliquet dolor quam sit amet urna. Pellentesque eget sem quam. Ut quis nisl eleifend, maximus nunc vel, interdum ex. Fusce a suscipit risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam sodales imperdiet lorem at tincidunt. Mauris sodales et lorem ut feugiat.<br><br>Quisque eget risus lobortis, posuere lorem id, consectetur ex. Morbi at magna mauris. Suspendisse luctus maximus augue, sit amet venenatis sapien cursus quis. Nullam a sem metus. Nulla cursus ut quam convallis placerat. Proin eu placerat ipsum, sed semper erat. Duis non tristique risus, efficitur suscipit metus. Cras scelerisque molestie lorem. Quisque nisi augue, blandit vel rutrum et, maximus et dui. Proin congue consequat finibus. Aenean sit amet ligula sit amet ipsum bibendum fringilla. Phasellus suscipit, justo fermentum mollis dictum, orci mauris convallis arcu, eu consectetur diam mauris quis nunc. Pellentesque id lectus accumsan, luctus ligula non, consequat ipsum. Vivamus in porttitor urna, id rutrum sapien.</p>
-        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a pulvinar ligula. In aliquam orci eget diam sagittis hendrerit. Nulla faucibus dapibus dictum. Nullam vitae malesuada ligula. Vestibulum imperdiet, nibh eu placerat ultricies, justo ligula pharetra nulla, at aliquet dolor quam sit amet urna. Pellentesque eget sem quam. Ut quis nisl eleifend, maximus nunc vel, interdum ex. Fusce a suscipit risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam sodales imperdiet lorem at tincidunt. Mauris sodales et lorem ut feugiat.<br><br>Quisque eget risus lobortis, posuere lorem id, consectetur ex. Morbi at magna mauris. Suspendisse luctus maximus augue, sit amet venenatis sapien cursus quis. Nullam a sem metus. Nulla cursus ut quam convallis placerat. Proin eu placerat ipsum, sed semper erat. Duis non tristique risus, efficitur suscipit metus. Cras scelerisque molestie lorem. Quisque nisi augue, blandit vel rutrum et, maximus et dui. Proin congue consequat finibus. Aenean sit amet ligula sit amet ipsum bibendum fringilla. Phasellus suscipit, justo fermentum mollis dictum, orci mauris convallis arcu, eu consectetur diam mauris quis nunc. Pellentesque id lectus accumsan, luctus ligula non, consequat ipsum. Vivamus in porttitor urna, id rutrum sapien.</p>
     </div>
 </div>
 
 <div id="Projects" class="section bg-gray">
     <div class="container">
         <h1>PROJECTS</h1>
-        <div class="row">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a pulvinar ligula. In aliquam orci eget diam sagittis hendrerit. Nulla faucibus dapibus dictum. Nullam vitae malesuada ligula. Vestibulum imperdiet, nibh eu placerat ultricies, justo ligula pharetra nulla, at aliquet dolor quam sit amet urna. Pellentesque eget sem quam. Ut quis nisl eleifend, maximus nunc vel, interdum ex. Fusce a suscipit risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam sodales imperdiet lorem at tincidunt. Mauris sodales et lorem ut feugiat.<br><br>Quisque eget risus lobortis, posuere lorem id, consectetur ex. Morbi at magna mauris. Suspendisse luctus maximus augue, sit amet venenatis sapien cursus quis. Nullam a sem metus. Nulla cursus ut quam convallis placerat. Proin eu placerat ipsum, sed semper erat. Duis non tristique risus, efficitur suscipit metus. Cras scelerisque molestie lorem. Quisque nisi augue, blandit vel rutrum et, maximus et dui. Proin congue consequat finibus. Aenean sit amet ligula sit amet ipsum bibendum fringilla. Phasellus suscipit, justo fermentum mollis dictum, orci mauris convallis arcu, eu consectetur diam mauris quis nunc. Pellentesque id lectus accumsan, luctus ligula non, consequat ipsum. Vivamus in porttitor urna, id rutrum sapien.</p>
-        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a pulvinar ligula. In aliquam orci eget diam sagittis hendrerit. Nulla faucibus dapibus dictum. Nullam vitae malesuada ligula. Vestibulum imperdiet, nibh eu placerat ultricies, justo ligula pharetra nulla, at aliquet dolor quam sit amet urna. Pellentesque eget sem quam. Ut quis nisl eleifend, maximus nunc vel, interdum ex. Fusce a suscipit risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam sodales imperdiet lorem at tincidunt. Mauris sodales et lorem ut feugiat.<br><br>Quisque eget risus lobortis, posuere lorem id, consectetur ex. Morbi at magna mauris. Suspendisse luctus maximus augue, sit amet venenatis sapien cursus quis. Nullam a sem metus. Nulla cursus ut quam convallis placerat. Proin eu placerat ipsum, sed semper erat. Duis non tristique risus, efficitur suscipit metus. Cras scelerisque molestie lorem. Quisque nisi augue, blandit vel rutrum et, maximus et dui. Proin congue consequat finibus. Aenean sit amet ligula sit amet ipsum bibendum fringilla. Phasellus suscipit, justo fermentum mollis dictum, orci mauris convallis arcu, eu consectetur diam mauris quis nunc. Pellentesque id lectus accumsan, luctus ligula non, consequat ipsum. Vivamus in porttitor urna, id rutrum sapien.</p>
     </div>
 </div>
 
 <div id="Resume" class="section bg-white">
     <div class="container">
         <h1>RÉSUMÉ</h1>
-        <div class="row">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a pulvinar ligula. In aliquam orci eget diam sagittis hendrerit. Nulla faucibus dapibus dictum. Nullam vitae malesuada ligula. Vestibulum imperdiet, nibh eu placerat ultricies, justo ligula pharetra nulla, at aliquet dolor quam sit amet urna. Pellentesque eget sem quam. Ut quis nisl eleifend, maximus nunc vel, interdum ex. Fusce a suscipit risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam sodales imperdiet lorem at tincidunt. Mauris sodales et lorem ut feugiat.<br><br>Quisque eget risus lobortis, posuere lorem id, consectetur ex. Morbi at magna mauris. Suspendisse luctus maximus augue, sit amet venenatis sapien cursus quis. Nullam a sem metus. Nulla cursus ut quam convallis placerat. Proin eu placerat ipsum, sed semper erat. Duis non tristique risus, efficitur suscipit metus. Cras scelerisque molestie lorem. Quisque nisi augue, blandit vel rutrum et, maximus et dui. Proin congue consequat finibus. Aenean sit amet ligula sit amet ipsum bibendum fringilla. Phasellus suscipit, justo fermentum mollis dictum, orci mauris convallis arcu, eu consectetur diam mauris quis nunc. Pellentesque id lectus accumsan, luctus ligula non, consequat ipsum. Vivamus in porttitor urna, id rutrum sapien.</p>
-        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a pulvinar ligula. In aliquam orci eget diam sagittis hendrerit. Nulla faucibus dapibus dictum. Nullam vitae malesuada ligula. Vestibulum imperdiet, nibh eu placerat ultricies, justo ligula pharetra nulla, at aliquet dolor quam sit amet urna. Pellentesque eget sem quam. Ut quis nisl eleifend, maximus nunc vel, interdum ex. Fusce a suscipit risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam sodales imperdiet lorem at tincidunt. Mauris sodales et lorem ut feugiat.<br><br>Quisque eget risus lobortis, posuere lorem id, consectetur ex. Morbi at magna mauris. Suspendisse luctus maximus augue, sit amet venenatis sapien cursus quis. Nullam a sem metus. Nulla cursus ut quam convallis placerat. Proin eu placerat ipsum, sed semper erat. Duis non tristique risus, efficitur suscipit metus. Cras scelerisque molestie lorem. Quisque nisi augue, blandit vel rutrum et, maximus et dui. Proin congue consequat finibus. Aenean sit amet ligula sit amet ipsum bibendum fringilla. Phasellus suscipit, justo fermentum mollis dictum, orci mauris convallis arcu, eu consectetur diam mauris quis nunc. Pellentesque id lectus accumsan, luctus ligula non, consequat ipsum. Vivamus in porttitor urna, id rutrum sapien.</p>
     </div>
 </div>
 
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-xs-5 footer-text">
+            <div class="col-sm-2 col-sm-push-5 footer-text footer-icon center-text">
+                <a href="#Top" title="Back to top"><i class="fa fa-arrow-circle-up"></i></a>
+            </div>
+            <div class="col-sm-5 col-sm-pull-2 footer-text">
                 &copy; 2015 <strong>Derek Baumgartner</strong>
-
             </div>
-            <div class="col-xs-2 footer-text footer-icon center-text">
-                <a href="#Top" title="Back to top"><i class="fa fa-arrow-up"></i></a>
-            </div>
-            <div class="col-xs-5 footer-text footer-icon right">
+            <div class="col-sm-5 footer-text footer-icon">
                 <a href="https://play.google.com/store/apps/developer?id=TheDBomb&hl=en"><i class="fa fa-android"></i></a>
                 <a href="https://github.com/Deba9398"><i class="fa fa-github"></i></a>
                 <a href="https://www.linkedin.com/pub/derek-baumgartner/79/39a/24b"><i class="fa fa-linkedin-square"></i></a>
