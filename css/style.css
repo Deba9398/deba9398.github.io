@@ -123,7 +123,7 @@ h2 {
 p {
     line-height: 1.5;
     color: #555;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .p-small {
@@ -180,14 +180,35 @@ p {
 }
 
 footer {
-    background-color: #3a4142;
+    /*background-color: #3a4142;*/ /* Old color */
     box-shadow: inset 0px 6px 20px -5px #000;
+    background: radial-gradient(at top,#364045,#2a2d30);
 }
 
 .footer-text {
     color: #a4adb7;
     font-size: 1.8rem;
     line-height: 100px;
+}
+
+.footer-icon {
+    font-size: 4rem;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.footer-icon > a {
+    color: #a4adb7;
+    -webkit-transition: color 400ms ease;
+    transition: color 400ms ease;
+}
+
+.footer-icon > a:hover {
+    color: #5f656f;
+}
+
+#back-to-top {
+    text-align: center;
 }
 
 /* Footer Media Queries */
@@ -200,27 +221,6 @@ footer {
     .footer-text .footer-icon {
         text-align: center;
     }
-}
-
-@media (min-width: 768px) {
-    .footer-icon {
-        text-align: right;
-    }
-}
-
-.footer-icon {
-    font-size: 4rem;
-    vertical-align: middle;
-}
-
-.footer-icon > a {
-    color: #a4adb7;
-    -webkit-transition: color 400ms ease;
-    transition: color 400ms ease;
-}
-
-.footer-icon > a:hover {
-    color: #5f656f;
 }
 
 .right {
@@ -237,4 +237,20 @@ footer {
 
 .header-links {
     padding-left: 0;
+}
+
+/* Devicon */
+.devicon-holder {
+    opacity: 0.5;
+    transition: opacity 0.4s;
+    padding: 0 1rem;
+}
+.devicon-holder:hover {
+    opacity: 1;
+}
+.devicon {
+    max-width: 3em;
+}
+
+.devicon path {
 }
