@@ -11,25 +11,26 @@
 </head>
 <body>
 <header id="Top">
+    <div id="overlay"></div>
     <div class="container">
-    <div class="row hidden-xs">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-            <ul class="header-links">
-                <li><a href="#AboutMe">ABOUT ME</a></li>
-                <li><a href="#Design">DESIGN</a></li>
-                <li><a href="#Resume">RÉSUMÉ</a></li>
-                <li><a href="#Projects">PROJECTS</a></li>
-            </ul>
-        </div>
-        <div class="col-md-3">
-            <div id="header-portfolios" class="hidden-sm">
-                <a href="https://play.google.com/store/apps/developer?id=TheDBomb&hl=en" title="Android Projects" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-android"></i></a>
-                <a href="https://github.com/Deba9398" title="Github" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/pub/derek-baumgartner/79/39a/24b" title="LinkedIn" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-linkedin-square"></i></a>
+        <div class="row hidden-xs">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <ul class="header-links">
+                    <li><a href="#AboutMe">ABOUT ME</a></li>
+                    <li><a href="#Design">DESIGN</a></li>
+                    <li><a href="#Resume">RÉSUMÉ</a></li>
+                    <li><a href="#Projects">PROJECTS</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <div id="header-portfolios" class="hidden-sm">
+                    <a href="https://play.google.com/store/apps/developer?id=TheDBomb&hl=en" title="Android Projects" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-android"></i></a>
+                    <a href="https://github.com/Deba9398" title="Github" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/pub/derek-baumgartner/79/39a/24b" title="LinkedIn" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-linkedin-square"></i></a>
+                </div>
             </div>
         </div>
-    </div>
     </div>
     <div id="title">
         <span id="title-span">DEREK BAUMGARTNER</span>
@@ -83,7 +84,14 @@
 
 <div id="Resume" class="section bg-white">
     <div class="container">
-        <h1>RÉSUMÉ<br><small><a href="DerekBaumgartner-Resume.docx">Download</a></small></h1>
+        <h1>
+            RÉSUMÉ<br>
+            <small class="weight-300">
+                DOWNLOAD:
+                <a href="files/DerekBaumgartner-Resume.pdf">PDF</a> |
+                <a href="files/DerekBaumgartner-Resume.docx">DOCX</a>
+            </small>
+        </h1>
 
         <div class="row">
             <div class="col-md-6">
@@ -203,9 +211,15 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="js/smooth-scroll.min.js"></script>
 <script>
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
+    $(document).ready(function() {
+
+        $('#overlay').css('opacity', '0');
+
+        // Set up tooltips
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+    });
 </script>
 <script>
 </script>
