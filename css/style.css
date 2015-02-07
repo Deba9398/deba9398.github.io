@@ -310,3 +310,22 @@ p {
 .weight-300 {
     font-weight: 300;
 }
+
+.full-width {
+    width: 100%;
+}
+
+#onerepmaxImg {
+    position: relative;
+}
+
+#onerepmaxtop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 300ms;
+}
+
+#onerepmaxtop:hover {
+    opacity: 0;
+}
