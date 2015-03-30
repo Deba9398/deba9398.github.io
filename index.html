@@ -409,13 +409,16 @@
                 {
                     boxClass:     'wow',      // default
                     animateClass: 'animated', // default
-                    offset:       100,          // default
+                    offset:       0,          // default
                     mobile:       true,       // default
                     live:         true        // default
                 }
         );
         wow.init();
 
+        // Get a random image for the header background
+        var imageNum = Math.floor((Math.random() * 7) + 1);
+        $('header').css('background-image', 'url(img/backgrounds/' + imageNum + '.jpg)');
         $('#overlay').css('opacity', '0');
 
         // Set up tooltips
