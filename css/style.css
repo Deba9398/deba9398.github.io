@@ -392,6 +392,16 @@ p {
     border-right: thin solid rgba(255,255,255,0.2);
 }
 
+@media (max-width: 991px) {
+    .left-right-dividers {
+        border: none;
+    }
+
+    #Experience > div > div:not(:first-child) {
+        margin-top: 40px;
+    }
+}
+
 .justify {
     text-align: justify;
 }
