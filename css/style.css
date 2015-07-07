@@ -366,6 +366,7 @@ p {
 .resume-download {
     font-weight: 300;
     font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .full-width {
@@ -421,4 +422,9 @@ p {
 #Resume p {
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+    margin-top: 15px;
+    border-top: 1px solid rgba(0,0,0,0.1);
 }
