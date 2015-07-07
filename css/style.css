@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Merriweather', Georgia, serif;
     text-rendering: optimizeLegibility;
 }
 
@@ -44,7 +44,7 @@ header {
     opacity: 0.7;
     margin: 1rem 1rem;
     padding: 0 1rem;
-    font-family: 'Lato', 'Roboto Condensed', sans-serif;
+    font-family: 'Lato', sans-serif;
     -webkit-transition: opacity 300ms ease;
     transition: opacity 300ms;
     text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
@@ -406,9 +406,12 @@ p {
     text-align: justify;
 }
 
-.side-padding-4 {
-    padding-left: 4rem;
-    padding-right: 4rem;
+#Experience .container div:not(:first-child) {
+    padding-left: 3rem;
+}
+
+#Experience .container div:not(:last-child) {
+    padding-right: 3rem;
 }
 
 #play-store-link {
@@ -417,4 +420,5 @@ p {
 
 #Resume p {
     font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
 }
