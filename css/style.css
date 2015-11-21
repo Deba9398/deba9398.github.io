@@ -206,8 +206,11 @@ p {
 }
 
 .blue-bar {
-    background-color: #337ab7;
+    background: linear-gradient(30deg, #085078, #85D8CE) fixed;
+    background-size: cover;
     padding: 6rem 0;
+    border-top: 5px solid rgba(255,255,255,0.5);
+    border-bottom: 5px solid rgba(255,255,255,0.5);
 }
 
 .blue-bar a {
