@@ -401,7 +401,6 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="js/smooth-scroll.min.js"></script>
-<script src="js/wow.min.js"></script>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -413,16 +412,6 @@
 </script>
 <script>
     $(document).ready(function() {
-        var wow = new WOW(
-                {
-                    boxClass:     'wow',      // default
-                    animateClass: 'animated', // default
-                    offset:       0,          // default
-                    mobile:       true,       // default
-                    live:         true        // default
-                }
-        );
-        wow.init();
 
         // Get a random image for the header background
         var imageNum = Math.floor((Math.random() * 7) + 1);
