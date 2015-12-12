@@ -9,9 +9,19 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Lato:700,900|Open+Sans:300italic,400italic,300,700,400|Merriweather:300,400,400italic,300italic' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link href='//fonts.googleapis.com/css?family=Lato:700,900|Open+Sans:300italic,400italic,300,700,400|Merriweather:300,400,400italic,300italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <noscript>
+        <style>
+            header {
+                background: url(img/backgrounds/7.jpg) no-repeat center center fixed;
+            }
+            #overlay {
+                opacity: 0.2;
+            }
+        </style>
+    </noscript>
 </head>
 <body>
 <header id="Top">
@@ -432,7 +442,6 @@
 </script>
 <script>
     $(document).ready(function() {
-
         // Get a random image for the header background
         var imageNum = Math.floor((Math.random() * 7) + 1);
         $('header').css('background-image', 'url(img/backgrounds/' + imageNum + '.jpg)');
